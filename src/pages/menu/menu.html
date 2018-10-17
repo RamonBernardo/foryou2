@@ -1,0 +1,75 @@
+
+
+
+  <ion-content padding class="getStart">
+      <ion-menu [content]='menu'>
+
+          <ion-content>
+                <ion-list>
+    
+                      <button ion-item menuClose>CATEGORIAS</button>
+                      <button ion-button full color="light"  (click)="terror()">
+                        <ion-icon name="logo-snapchat"></ion-icon>
+                        Terror
+                      </button>
+                      <button ion-button full color="light"  (click)="login()">
+                        <ion-icon name="bonfire"></ion-icon>
+                        AÇÃO
+                      </button>
+                      <button ion-button full color="light" (click)="login()">
+                        <ion-icon name="bicycle"></ion-icon>
+                        AVENTURA
+                      </button>
+                      <button ion-button full color="light" (click)="sair()">
+                        <ion-icon name="exit"></ion-icon>
+                        SAIR
+                      </button>
+                </ion-list>
+    
+          </ion-content>
+    </ion-menu>
+         
+         
+         <ion-nav #menu [root]="rootPage"></ion-nav>
+      <ion-title>GAMES</ion-title>
+      <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-list>
+            <ion-item>
+              <ion-thumbnail item-start>
+                <img src="../assets/imgs/7.jpg">
+              </ion-thumbnail>
+              <h2>FIFA2018</h2>
+              <p>R$ 100</p>
+              <button ion-button (click)="fifa()">View</button>
+            </ion-item>
+            <ion-item>
+                <ion-thumbnail item-start>
+                  <img src="../assets/imgs/8.jpg">
+                </ion-thumbnail>
+                <h2>Hunter</h2>
+                <p>R$200</p>
+                <button ion-button (click)="hunter()">View</button>
+              </ion-item>
+              <ion-item>
+                  <ion-thumbnail item-start>
+                    <img src="../assets/imgs/9.jpg">
+                  </ion-thumbnail>
+                  <h2>God of War</h2>
+                  <p>R$161,91</p>
+                  <button ion-button (click)="godOfWar()">View</button>
+                </ion-item>
+                <ion-item>
+                  <ion-thumbnail item-start>
+                    <img src="../assets/imgs/13.png">
+                  </ion-thumbnail>
+                  <h2>Mass Effect Andromeda</h2>
+                  <p>R$ 69,00</p>
+                  <button ion-button (click)="massefect()">View</button>
+                </ion-item>
+          </ion-list>
+   </ion-content>
+
+
+
